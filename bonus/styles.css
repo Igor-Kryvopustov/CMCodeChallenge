@@ -1,0 +1,49 @@
+#root {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 40px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  gap: 5%;
+  border-bottom: 1px solid #a6a6a6;
+  flex: 1;
+  justify-content: center;
+  padding-bottom: 5px;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.navbar__item {
+  color: #a6a6a6;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.navbar__item:hover:not(.navbar__item--active) {
+  color: #4184bf;
+}
+
+.navbar__item--active {
+  color: black;
+  cursor: default;
+}
+
+.navbar__underline {
+  position: absolute;
+  bottom: -1px;
+  height: 1px;
+  background-color: black;
+  transition: all 0.5s ease-out;
+  z-index: 2;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
